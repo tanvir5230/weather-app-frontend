@@ -1,23 +1,26 @@
-import logo from './logo.svg';
-import './App.css';
+import "./App.css";
+import { HomePage } from "./pages/HomePage";
 
 function App() {
   return (
-    <div className="App">
-      <header className="App-header">
-        <img src={logo} className="App-logo" alt="logo" />
-        <p>
-          Edit <code>src/App.js</code> and save to reload.
-        </p>
-        <a
-          className="App-link"
-          href="https://reactjs.org"
-          target="_blank"
-          rel="noopener noreferrer"
+    <div className="container-fluid">
+      <div className="row">
+        <div
+          className="d-none d-md-block col-md-2 bg-warning"
+          style={{ height: "100vh" }}
         >
-          Learn React
-        </a>
-      </header>
+          sidebar
+        </div>
+        <div className="col-md-7" style={{ height: "100vh" }}>
+          <HomePage />
+        </div>
+        <div
+          className="d-none d-md-block col-md-3 bg-warning"
+          style={{ height: "100vh" }}
+        >
+          weather forecast
+        </div>
+      </div>
     </div>
   );
 }
