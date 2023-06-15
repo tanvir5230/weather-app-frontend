@@ -3,15 +3,15 @@ import { BiSearch } from "react-icons/bi";
 
 export const SearchBar = () => {
   return (
-    <div className="col-md-8">
+    <div className="col-10">
       <div className="row">
-        <div className="col-md-1">
-          <BiSearch />
-        </div>
-        <div className="col-md-11">
+        <div className="col-12">
+          <button className="btn">
+            <BiSearch />
+          </button>
           <input
             type="text"
-            class="form-control"
+            className="border-0 text-sm"
             placeholder="Type a place name..."
           />
         </div>
