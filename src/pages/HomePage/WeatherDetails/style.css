@@ -1,0 +1,45 @@
+/* Compass for wind*/
+.compass {
+    position: relative;
+    width: 100px;
+    height: 100px;
+    border-radius: 50%;
+    border: 3px dashed lightblue;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+}
+
+.compass-needle {
+    position: absolute;
+    top: 0;
+    left: 50%;
+    width: 4px;
+    height: 50%;
+    background-color: red;
+    transform-origin: bottom center;
+    border-radius: 50%;
+}
+
+.compass-letter {
+    position: absolute;
+    font-size: 18px;
+    font-weight: bold;
+}
+
+.compass-north {
+    top: 5px;
+}
+
+.compass-east {
+    right: 5px;
+}
+
+.compass-south {
+    bottom: 5px;
+}
+
+.compass-west {
+    left: 5px;
+}
+

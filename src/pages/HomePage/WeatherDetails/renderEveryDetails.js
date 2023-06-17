@@ -3,10 +3,11 @@ import React from "react";
 export const renderEveryDetails = (
   parameter = "wind",
   heading = "Today Wind Speed",
-  unit = "120 m/s"
+  unit = "120 m/s",
+  { component: Component, attributes }
 ) => {
   return (
-    <div className="col-6 p-0 m-0">
+    <div className="col-12 col-md-6 p-0 m-0">
       <div
         className="d-flex justify-content-between align-items-center bg-light border px-3 m-3"
         style={{ height: "150px", borderRadius: "10px" }}
@@ -16,8 +17,8 @@ export const renderEveryDetails = (
           <p>{heading}</p>
           <h5>{unit}</h5>
         </div>
-        <div>
-          <p>hello</p>
+        <div style={{ width: "100px", height: "100px" }}>
+          <Component {...attributes} />
         </div>
       </div>
     </div>
