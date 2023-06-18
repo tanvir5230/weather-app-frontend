@@ -5,7 +5,7 @@ export const Notification = () => {
   return (
     <div className="col-1 d-flex justify-content-end">
       <button className="btn">
-        <IoMdNotificationsOutline />
+        <IoMdNotificationsOutline style={{ width: "20px", height: "20px" }} />
       </button>
     </div>
   );

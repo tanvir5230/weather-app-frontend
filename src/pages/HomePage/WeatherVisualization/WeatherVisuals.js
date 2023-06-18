@@ -129,12 +129,23 @@ const PressureVisual = ({ value }) => {
           width: "4px",
           height: "44px",
           position: "absolute",
-          top: "40px",
+          top: "24px",
           left: "48px",
           backgroundColor: "#4994ec",
           borderRadius: "100%",
           transformOrigin: "bottom center",
           transform: `rotate(${amountOfRotation}deg)`,
+        }}
+      />
+      <div
+        style={{
+          width: "10px",
+          height: "10px",
+          borderRadius: "100%",
+          border: "3px solid #5c92e5",
+          position: "absolute",
+          left: "45px",
+          top: "63px",
         }}
       />
     </div>

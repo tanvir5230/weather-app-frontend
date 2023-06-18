@@ -5,7 +5,7 @@ import { Profile } from "./Profile";
 
 export const Header = () => {
   return (
-    <div className="row align-items-center">
+    <div className="row align-items-center 20vh py-3">
       <SearchBar />
       <Notification />
       <Profile />

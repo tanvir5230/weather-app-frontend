@@ -4,18 +4,20 @@ import { GiSpeedBoat } from "react-icons/gi";
 import MyBackgroundImage from "../../../assets/backgrounds/clear-sky.jpg";
 import { TemperatureOverview } from "./TemperatureOverview";
 
-export const WeatherSummary = () => {
+export const WeatherHeroSection = () => {
   return (
     <div
-      className="row"
+      className="row hero-section mx-1"
       style={{
-        minHeight: "40vh",
         backgroundImage: `url(${MyBackgroundImage})`,
+        minHeight: "40vh",
         backgroundSize: "cover",
         backgroundRepeat: "no-repeat",
         backgroundPosition: "center",
         borderRadius: "10px",
         position: "relative",
+        color: "#2a3e45",
+        fontWeight: "bold",
       }}
     >
       <div
@@ -25,15 +27,18 @@ export const WeatherSummary = () => {
           borderRadius: "10px",
         }}
       ></div>
-      <div className="col-12 col-md-6 text-black position-relative z-100 d-flex flex-column justify-content-between py-3">
+      <div className="col-12 col-md-6 position-relative z-100 d-flex flex-column justify-content-between px-3 py-4">
         <div className="d-flex justify-content-between align-items-center">
           <PlaceName />
           <Time />
         </div>
         <div className="d-flex justify-content-center flex-column align-items-center p-0 m-0">
-          <p style={{ fontSize: "60px" }} className="p-0 m-0">
-            14
-          </p>
+          <h3 className="p-0 m-0">
+            <span style={{ fontSize: "100px" }}>
+              14
+              <sup style={{ fontSize: "60px" }}>o</sup>
+            </span>
+          </h3>
           <p className="p-0 m-0">mostly clear</p>
         </div>
         <div className="d-flex justify-content-between">
@@ -59,7 +64,7 @@ export const WeatherSummary = () => {
 
 const PlaceName = () => {
   return (
-    <div className="d-flex justify-content-start align-items-center">
+    <div className="d-flex justify-content-start align-items-center place">
       <BiMap />
       <p className="m-0 p-0">Cumilla</p>
     </div>
@@ -68,7 +73,7 @@ const PlaceName = () => {
 
 const Time = () => {
   return (
-    <div className="d-flex justify-content-start align-items-center">
+    <div className="d-flex justify-content-start align-items-center time">
       <p className="m-0" style={{ paddingRight: "10px" }}>
         Today
       </p>

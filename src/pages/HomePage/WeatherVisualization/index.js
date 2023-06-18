@@ -7,7 +7,7 @@ import {
   WindVisual,
 } from "./WeatherVisuals";
 
-export const WeatherDetails = () => {
+const WeatherVisuals = () => {
   return (
     <div className="row py-3" style={{ minHeight: "40vh" }}>
       {renderEveryDetails("wind", "Today Wind Speed", "", {
@@ -29,3 +29,5 @@ export const WeatherDetails = () => {
     </div>
   );
 };
+
+export { WeatherVisuals };
