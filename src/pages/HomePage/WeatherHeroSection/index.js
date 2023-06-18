@@ -27,7 +27,7 @@ export const WeatherHeroSection = () => {
           borderRadius: "10px",
         }}
       ></div>
-      <div className="col-12 col-md-6 position-relative z-100 d-flex flex-column justify-content-between px-3 py-4">
+      <div className="col-12 col-lg-6 position-relative z-100 d-flex flex-column justify-content-between px-3 py-4">
         <div className="d-flex justify-content-between align-items-center">
           <PlaceName />
           <Time />
@@ -47,7 +47,7 @@ export const WeatherHeroSection = () => {
           {showMeasurement(GiSpeedBoat, 720, "hpa")}
         </div>
       </div>
-      <div className="col-12 col-md-6 text-black position-relative z-100 d-flex flex-column justify-content-between p-3">
+      <div className="col-12 col-lg-6 text-black position-relative z-100 d-flex flex-column justify-content-between p-3">
         <div
           className="w-100 h-100 p-3 d-flex flex-column justify-content-between align-items-start"
           style={{
