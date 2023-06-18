@@ -1,25 +1,30 @@
 import React from "react";
 import { renderEveryDetails } from "./renderEveryDetails";
-import { WindVisual } from "./WeatherVisuals";
+import {
+  PressureVisual,
+  RainVisual,
+  UVVisual,
+  WindVisual,
+} from "./WeatherVisuals";
 
 export const WeatherDetails = () => {
   return (
     <div className="row py-3" style={{ minHeight: "40vh" }}>
-      {renderEveryDetails("wind", "Today Wind Speed", "120 m/s", {
+      {renderEveryDetails("wind", "Today Wind Speed", "", {
         component: WindVisual,
-        attributes: { direction: "north" },
+        attributes: { value: "north" },
       })}
-      {renderEveryDetails("wind", "Today Wind Speed", "120 m/s", {
-        component: WindVisual,
-        attributes: { direction: "north" },
+      {renderEveryDetails("Rain Chance", "Chance of Rain", "%", {
+        component: RainVisual,
+        attributes: { value: 54 },
       })}
-      {renderEveryDetails("wind", "Today Wind Speed", "120 m/s", {
-        component: WindVisual,
-        attributes: { direction: "north" },
+      {renderEveryDetails("Pressure", "Today's Pressure", " hpa", {
+        component: PressureVisual,
+        attributes: { value: 1300 },
       })}
-      {renderEveryDetails("wind", "Today Wind Speed", "120 m/s", {
-        component: WindVisual,
-        attributes: { direction: "north" },
+      {renderEveryDetails("UV", "Today's UV Index", "", {
+        component: UVVisual,
+        attributes: { value: 2 },
       })}
     </div>
   );

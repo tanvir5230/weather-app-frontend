@@ -3,9 +3,10 @@ import React from "react";
 export const renderEveryDetails = (
   parameter = "wind",
   heading = "Today Wind Speed",
-  unit = "120 m/s",
+  unit = "m/s",
   { component: Component, attributes }
 ) => {
+  const { value } = { ...attributes };
   return (
     <div className="col-12 col-md-6 p-0 m-0">
       <div
@@ -15,7 +16,10 @@ export const renderEveryDetails = (
         <div>
           <h5>{parameter}</h5>
           <p>{heading}</p>
-          <h5>{unit}</h5>
+          <h5>
+            {value}
+            {unit}
+          </h5>
         </div>
         <div style={{ width: "100px", height: "100px" }}>
           <Component {...attributes} />
