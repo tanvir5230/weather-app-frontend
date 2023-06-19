@@ -39,7 +39,7 @@ export const WeatherHeroSection = () => {
           {showMeasurement(GiSpeedBoat, 720, "hpa")}
         </div>
       </div>
-      <div className="col-12 col-lg-6 text-black position-relative z-100 d-flex flex-column justify-content-between p-3">
+      <div className="col-12 col-lg-6 text-black position-relative z-100 d-flex flex-column justify-content-between p-lg-3 pb-3">
         <div
           className="w-100 h-100 p-3 d-flex flex-column justify-content-between align-items-start"
           style={{

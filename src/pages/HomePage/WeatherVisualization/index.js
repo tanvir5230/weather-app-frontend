@@ -9,7 +9,7 @@ import {
 
 const WeatherVisuals = () => {
   return (
-    <div className="row py-3" style={{ minHeight: "40vh" }}>
+    <div className="row py-3 mb-5 mb-lg-0" style={{ minHeight: "40vh" }}>
       {renderEveryDetails("wind", "Today Wind Speed", "", {
         component: WindVisual,
         attributes: { value: "north" },

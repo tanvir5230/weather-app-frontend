@@ -12,7 +12,7 @@ function App() {
   return (
     <Router>
       <div className="container-fluid overflow-hidden">
-        <div className="d-lg-none postion-fixed fixed-bottom d-flex justify-content-center align-items-center">
+        <div className="d-lg-none postion-absolute fixed-bottom d-flex justify-content-center align-items-center">
           <NavbarForSmallScreen />
         </div>
         <div className="row">
