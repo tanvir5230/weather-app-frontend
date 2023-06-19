@@ -32,15 +32,7 @@ export const WeatherHeroSection = () => {
           <PlaceName />
           <Time />
         </div>
-        <div className="d-flex justify-content-center flex-column align-items-center p-0 m-0">
-          <h3 className="p-0 m-0">
-            <span style={{ fontSize: "100px" }}>
-              14
-              <sup style={{ fontSize: "60px" }}>o</sup>
-            </span>
-          </h3>
-          <p className="p-0 m-0">mostly clear</p>
-        </div>
+        <TempInTheMiddle />
         <div className="d-flex justify-content-between">
           {showMeasurement(GiSpeedBoat, 720, "hpa")}
           {showMeasurement(GiSpeedBoat, 720, "hpa")}
@@ -78,6 +70,20 @@ const Time = () => {
         Today
       </p>
       <p className="p-0 m-0">00:32 PM</p>
+    </div>
+  );
+};
+
+const TempInTheMiddle = () => {
+  return (
+    <div className="d-flex justify-content-center flex-column align-items-center">
+      <h3 className="p-0 m-0">
+        <span style={{ fontSize: "100px" }}>
+          14
+          <sup style={{ fontSize: "60px" }}>o</sup>
+        </span>
+      </h3>
+      <p className="py-3 m-0">mostly clear</p>
     </div>
   );
 };
